@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>来一场说走就走的旅行</title>
+	<meta name="viewport" content="width=100%; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<script type="text/javascript" src="themes/js/jquery.min.js"></script>
+	<script type="text/javascript" src="themes/js/swiper-3.4.0.jquery.min.js"></script>
+	<!-- 此次引入播放器js -->
+	<script type="text/javascript" src="themes/js/sc-player.js"></script>
+	<link href="favicon.ico" type="image/x-icon" rel="icon">
+	<link rel="stylesheet" href="themes/css/swiper-3.2.7.min.css"/>
+	<link rel="stylesheet" href="themes/css/home.css"/>
+	<link rel="stylesheet" href="themes/css/aui.css"/>
+	<!-- 此次引入播放器css -->
+	<link rel="stylesheet" href="themes/css/sc-player.css"/>
+
+</head>
+<body>
+
+	<header class="aui-bar aui-bar-nav aui-bar-light">
+		<a href="javascript:" onclick="history.back(); " class="aui-pull-left aui-btn" >
+			<span class="aui-iconfont aui-icon-left">  </span>
+		</a>
+		<div class="aui-title">新闻列表</div>
+		<a class="aui-pull-right aui-btn ">
+			<span class="aui-iconfont aui-icon-more">  </span>
+		</a>
+	</header>
+
+	<div class="aui-main">
+		<article class="article padding-side">
+			<div>
+				<h1 class="article-title">来一场说走就走的旅行</h1>
+			</div>
+			<div class="article-content">
+				<p><font color="grey">小薛谈生活&emsp;2021年9月21日</font></p>
+				
+				<p>
+					&emsp;&emsp;人生苦短，但我有对美好世界的向往，我不想做一个井底之蛙。那么，就让我脱离世俗与悲痛，来一场说走就走的旅行。
+				</p>
+				<div class="wrap" onclick="musicSwith(this)">
+					<a class="avatar-pic avatar pause" href="javascript:;">
+						<img src="themes/img/ad/fm_zj.jpg" alt="haha">
+					</a>
+					<i class="zantin"></i>
+					<audio src="themes\media\music_zj.mp3" preload="auto" oncanplay="icanplay(this)" onended="iplayend(this)"></audio>
+				</div>
+				<p>
+					&emsp;&emsp;我的美梦不是梦，今天我将要离开，去到我梦寐以求的地方。再见了，这令我伤心的土地，我也许不会再归来，请你将我遗忘。
+				</p>
+				<h2 style="text-align: center;">去哪呢？</h2>
+				<p>
+					&emsp;&emsp;真实存在的地方，我愿意葬身于此！快看，这是我的伙伴，和你们在一起我是多么的快乐。这似梦非梦的森林才是我真正的归宿。
+				</p>
+				<video src="themes\media\video_lu.mp4" controls="controls" onplay="stopAllMusic();stopAllVideo(this)">
+					您的浏览器不支持 video 标签。
+				</video>
+				<p>
+					<br />
+					&emsp;&emsp;美国巨杉森林，人是多么渺茫的存在！我宁愿当个袖珍小人，与巨木共存。把一生献给这里，值了！
+				</p>
+				<video src="themes\media\video_shu.mp4" controls="controls" onplay="stopAllMusic();stopAllVideo(this)">
+					您的浏览器不支持 video 标签。
+				</video>
+				<p>
+					&emsp;&emsp;抓住就在眼前的希望，哪怕是摧毁我那躯壳，变成幽灵在此游荡。我放弃的美好实在是太多了，这一次，不会再像以前那样了。
+				</p>
+			</div>
+		</article>
+	</div>
+
+	<div class="aui-card-list-content">
+		<div class="aui-bg-like"><i class="aui-iconfont aui-icon-like"></i> 1051 人喜欢</div>
+		<div class="aui-share-icon clearfix">
+			<div class="aui-share-line b-line clearfix">
+				<h2>分享到</h2>
+			</div>
+			<ul class="clearfix" style="padding-top:15px; padding-bottom:10px;">
+				<li><i class="aui-iconfont aui-icon-wechat"></i></li>
+				<li><i class="aui-iconfont aui-icon-wechat-circle"></i></li>
+				<li><i class="aui-iconfont aui-icon-weibo" style="color:#ff6178"></i></li>
+			</ul>
+		</div>
+
+		<!-- <div class="aui-card-list">
+			<div class="aui-card-list-header" style="padding-bottom:0">
+				<h3>帕托撩迪丽热巴!自认长相完爆鹿晗!要修成</h3>
+			</div>
+			<div class="aui-card-list-content-padded" style="padding-top:0">
+				<div class="aui-row aui-row-padded">
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<ul class="aui-list aui-media-list">
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_umbrella.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">九月借你吉言</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>964</div>
+						</div>
+						<div class="aui-list-item-text">
+							别做白日梦了，兄弟！你是生在福中不知福啊
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_2d.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">卡米赛</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>843</div>
+						</div>
+						<div class="aui-list-item-text">
+							人间仙境，我也想去，可惜没钱
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_shibainu.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">捣蛋的老卢</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>799</div>
+						</div>
+						<div class="aui-list-item-text">
+							说走就走，你走一个看看
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="aui-card-list-footer aui-text-center aui-list-item-arrow">
+		查看更多跟帖
+	</div>
+	</div>
+
+	<!--<footer class="aui-bar aui-bar-tab" id="footer" style="border-top:1px solid #ddd; background:#efefef">-->
+		<!--<div class="aui-bar-tab-item aui-active" tapmode>-->
+			<!--<a href="index.html">-->
+				<!--<i class="aui-iconfont aui-icon-home"></i>-->
+				<!--<div class="aui-bar-tab-label">首页</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-like"></i>-->
+				<!--<div class="aui-bar-tab-label">要闻</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-video"></i>-->
+				<!--<div class="aui-bar-tab-label">视频</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-my"></i>-->
+				<!--<div class="aui-bar-tab-label">我的</div>-->
+			<!--</a>-->
+		<!--</div>-->
+	<!--</footer>-->
+</body>
+</html>
