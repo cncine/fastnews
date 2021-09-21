@@ -14,7 +14,7 @@ function musicSwith(node) {
     if (!n_audio.paused) {
         switchIcon(node);
         n_audio.pause();
-    } else if (node.classList.contains("_canplay")) {   
+    } else if (/*node.classList.contains("_canplay")*/true) {   
         switchIcon(node);
         n_audio.play();
         stopAllVideo();
