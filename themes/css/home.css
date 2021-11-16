@@ -413,6 +413,9 @@ body{
 	background-color: #f34347;
 	color: #ffffff;
 }
+.aui-bar-nav.bluecol {
+	background-color: #33cccc;
+}
 .aui-title a {
 	color: inherit;
 }
@@ -638,6 +641,10 @@ body{
 	color:#fff;
 	text-align:center;
 	margin-bottom:20px;
+}
+
+.aui-bg-like.bluecol{
+	background:#00ccff;
 }
 
 .aui-share-icon{
