@@ -1,0 +1,9 @@
+<div class="wrap" onclick="musicSwith(this)">
+    <a class="avatar-pic avatar pause" href="javascript:;">
+        <img src="themes/img/ad/xscok.jpg" alt="haha">
+    </a>
+    <i class="zantin"></i>
+    <audio src="http://xuesenchan.gitee.io/mydocument/audio/fbi_zj.mp3" preload="auto" oncanplay="icanplay(this)" onended="iplayend(this)">
+    </audio>
+</div>
+FBI调查笔录<br/>编号：CN20200320<br/>调查地点：陕西省南郑县胡家营镇塘坎村<br/>措施：当事人已被转运至西安市二号FBI隔离点进行研究，事发时的在场民众均已被执行B级记忆消除，我们以当事人感染新冠肺炎为由告知当事人的相关人员。目前对策正在议会中。<br/><img src="http://xuesenchan.gitee.io/mydocument/image/zhangjiang.jpg" style="width: 50%;height: auto;float: left;" />描述：当事人是一个约55岁的村干部，受到未知影响发生突变，其面部眼睛和口部已严重扭曲。与其直视者会产生严重的头晕和心理不适，在脑海中会出现一段旋律，经有关分析，此旋律与恐怖电影《生人回避》的片头曲基本一致。我们对当事人的DNA进行采样分析，并没有发现异常。事发当天早晨，派出所接到了报案，报案者声称自己的老伴变成怪物了，这引起了我们的注意，我们到场后立刻进行了收容。陈博士：难道这就是10492？

@@ -1,0 +1,62 @@
+[
+    {
+        "type": "文稿",
+        "word":[
+            {"name": "致塘坎", "path": "themes\\library\\tangkan.word"},
+            {"name": "致村委", "path": "themes\\library\\cunwei.word"},
+            {"name": "重要通知", "path": "themes\\library\\tongzhi.word"},
+            {"name": "人民通告", "path": "themes\\library\\renmin.word"},
+            {"name": "人死后会怎样", "path": "themes\\library\\sihou.word"},
+			{"name": "植物人", "path": "themes\\library\\zwr.word"},
+			{"name": "永恒轮回", "path": "themes\\library\\lunhui.word"},
+			{"name": "无题论文", "path": "themes\\library\\lunwen.word"},
+			{"name": "可怜的孩子", "path": "themes\\library\\kelian.word"},
+			{"name": "薛阳与上帝", "path": "themes\\library\\shangdi.word"},
+			{"name": "悲剧家庭", "path": "themes\\library\\beiju.word"},
+			{"name": "说走就走的旅行", "path": "themes\\library\\lvxin.word"}
+        ]
+    },
+    {
+        "type": "记事",
+        "word":[
+            {"name": "捡回来的猫", "path": "themes\\library\\mao.word"},
+            {"name": "李桂英事件", "path": "themes\\library\\lgy1.word"},
+            {"name": "NN的记忆-海绵事件", "path": "themes\\library\\haimian.word"},
+            {"name": "NN的记忆-三院", "path": "themes\\library\\sanyaun1.word"},
+            {"name": "平行世界侮辱nn事件", "path": "themes\\library\\nn.word"},
+            {"name": "李嫂记事", "path": "themes\\library\\lisao.word"},
+            {"name": "谈谈李桂英", "path": "themes\\library\\lgy2.word"},
+            {"name": "李元箐事件", "path": "themes\\library\\lyq.word"},
+			{"name": "我的自传", "path": "themes\\library\\zizhuan.word"},
+			{"name": "三个梦", "path": "themes\\library\\meng.word"},
+			{"name": "显卡梦", "path": "themes\\library\\jimeng.word"},
+			{"name": "三院之下楼", "path": "themes\\library\\xialou.word"},
+			{"name": "二度三院", "path": "themes\\library\\sanyuan2.word"},
+			{"name": "薛阳命运多舛", "path": "themes\\library\\xueyang.word"}
+			
+        ]
+    },
+    {
+        "type": "老薛(蒙尔奇)",
+        "word":[
+            {"name": "我为什么不想养阳阳", "path": "themes\\library\\yangyang1.word"},
+            {"name": "阳阳得病", "path": "themes\\library\\yangyang2.word"},
+            {"name": "烟囱倒了", "path": "themes\\library\\yancong.word"},
+            {"name": "黑狗的故事", "path": "themes\\library\\heigou.word"},
+			{"name": "我爸走了", "path": "themes\\library\\yuba.word"}
+        ]
+    },
+    {
+        "type": "搞怪",
+        "word":[
+            {"name": "村干部退休后变成怪物", "path": "themes\\library\\ganbu.word"},
+			{"name": "恐怖论", "path": "themes\\library\\kbl.word"}
+        ]
+    },
+    {
+        "type": "收容保护",
+        "word":[
+            {"name": "加密文档", "path": "themes\\library\\jiami1.word", "encode":true}
+        ]
+    }
+]

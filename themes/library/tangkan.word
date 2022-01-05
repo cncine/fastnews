@@ -1,0 +1,9 @@
+<div class="wrap" onclick="musicSwith(this)">
+    <a class="avatar-pic avatar pause" href="javascript:;">
+        <img src="themes/img/ad/xscok.jpg" alt="haha">
+    </a>
+    <i class="zantin"></i>
+    <audio src="http://xuesenchan.gitee.io/mydocument/audio/tangkan.mp3" preload="auto" oncanplay="icanplay(this)" onended="iplayend(this)">
+    </audio>
+</div>
+住在塘坎子的人们，我真的不想伤害你们，可你们一个个对我咬牙切齿。你们就看我是外地人是吧，看我软弱是吧？我真正发起火来是会把你们砍死的，到时候来几个我砍死几个。现在打电话给我道歉我们还是一家人，别太晚弄得事情不利。我是薛阳，我爱你们。

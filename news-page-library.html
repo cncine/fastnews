@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>图书馆</title>
+	<meta name="viewport" content="width=100%; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<script type="text/javascript" src="themes/js/jquery.min.js"></script>
+	<script type="text/javascript" src="themes/js/swiper-3.4.0.jquery.min.js"></script>
+	<script type="text/javascript" src="themes/js/decrypt.js"></script>
+	<script type="text/javascript" src="themes/js/sc-player.js"></script>
+	<link href="favicon.ico" type="image/x-icon" rel="icon">
+	<link rel="stylesheet" href="themes/css/swiper-3.2.7.min.css"/>
+	<link rel="stylesheet" href="themes/css/home.css"/>
+	<link rel="stylesheet" href="themes/css/aui.css"/>
+	<link rel="stylesheet" href="themes/css/sc-player.css"/>
+	<style>
+		.word_title {
+			border:1px solid green;
+			background-color: lime;
+			border-radius: 0.2rem;
+		}
+		.word_name {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;]
+			display: block;
+			white-space: nowrap;
+		}
+		.navigation {
+			text-align: center;
+		}
+		.loadingdiv {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.4);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.loadingdiv>div {
+			color: #FFFFFF;
+			font-size: 1rem;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="aui-bar aui-bar-nav aui-bar-light bluecol">
+		<a href="javascript:" onclick="history.back(); " class="aui-pull-left aui-btn" >
+			<span class="aui-iconfont aui-icon-left">  </span>
+		</a>
+		<div class="aui-title">图书馆</div>
+		<a class="aui-pull-right aui-btn ">
+			<span class="aui-iconfont aui-icon-more">  </span>
+		</a>
+	</header>
+
+	<div class="aui-main">
+		<article class="article padding-side">
+			<div>
+				<h1 class="article-title">森禅图书馆</h1>
+			</div>
+			<div class="article-content">
+				<p><font color="grey">小薛谈生活&emsp;始于2022年1月5日</font></p>
+				我写过的一些文章，我把它们整理在这里，方便阅读。
+				<div class="navigation">
+					
+				</div>
+				<b>正文：</b>
+				<div class="main_text">
+					
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<div class="aui-card-list-content">
+		<!-- <div class="aui-bg-like"><i class="aui-iconfont aui-icon-like"></i> 7846 人喜欢</div> -->
+		<div class="aui-share-icon clearfix">
+			<div class="aui-share-line b-line clearfix">
+				<h2>分享到</h2>
+			</div>
+			<ul class="clearfix" style="padding-top:15px; padding-bottom:10px;">
+				<li><i class="aui-iconfont aui-icon-wechat"></i></li>
+				<li><i class="aui-iconfont aui-icon-wechat-circle"></i></li>
+				<li><i class="aui-iconfont aui-icon-weibo" style="color:#ff6178"></i></li>
+			</ul>
+		</div>
+
+		<!-- <div class="aui-card-list">
+			<div class="aui-card-list-header" style="padding-bottom:0">
+				<h3>帕托撩迪丽热巴!自认长相完爆鹿晗!要修成</h3>
+			</div>
+			<div class="aui-card-list-content-padded" style="padding-top:0">
+				<div class="aui-row aui-row-padded">
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+					<div class="aui-col-xs-4">
+						<img src="themes/img/ad/a2.jpg" />
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <ul class="aui-list aui-media-list">
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_frog.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">用户1</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>999+</div>
+						</div>
+						<div class="aui-list-item-text">
+							评论1
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_fbb.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">用户2</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>999+</div>
+						</div>
+						<div class="aui-list-item-text">
+							评论2
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item aui-list-item-middle">
+				<div class="aui-media-list-item-inner">
+					<div class="aui-list-item-media">
+						<img src="themes/img/ad/tou_rat.jpg" class="aui-img-round aui-list-img-sm">
+					</div>
+					<div class="aui-list-item-inner ">
+						<div class="aui-list-item-text">
+							<div class="aui-list-item-title">用户3</div>
+							<div class="aui-list-item-right"><i class="aui-iconfont aui-icon-laud"></i>999+</div>
+						</div>
+						<div class="aui-list-item-text">
+							评论3
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul> -->
+	</div>
+	<div class="aui-card-list-footer aui-text-center aui-list-item-arrow">
+		暂无更多评论
+	</div>
+
+	<!--<footer class="aui-bar aui-bar-tab" id="footer" style="border-top:1px solid #ddd; background:#efefef">-->
+		<!--<div class="aui-bar-tab-item aui-active" tapmode>-->
+			<!--<a href="index.html">-->
+				<!--<i class="aui-iconfont aui-icon-home"></i>-->
+				<!--<div class="aui-bar-tab-label">首页</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-like"></i>-->
+				<!--<div class="aui-bar-tab-label">要闻</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-video"></i>-->
+				<!--<div class="aui-bar-tab-label">视频</div>-->
+			<!--</a>-->
+		<!--</div>-->
+		<!--<div class="aui-bar-tab-item" tapmode>-->
+			<!--<a href="#">-->
+				<!--<i class="aui-iconfont aui-icon-my"></i>-->
+				<!--<div class="aui-bar-tab-label">我的</div>-->
+			<!--</a>-->
+		<!--</div>-->
+	<!--</footer>-->
+	<div class="loadingdiv"><div>请稍后</div></div>
+	<script type="text/javascript">
+		$.getJSON("themes/library/index.json", "", function(data) {
+			window.index_data = data;
+			for (var i = 0; i < data.length; i++) {
+				var div_title = document.createElement("div");
+				div_title.className = "word_title";
+				div_title.innerHTML = data[i].type;
+				$(".article-content .navigation").append(div_title);
+				for (var j = 0; j < data[i].word.length; j++) {
+					var a_title = document.createElement("a");
+					a_title.className = "word_name";
+					a_title.innerHTML = data[i].word[j].name;
+					a_title.setAttribute("in_type", i);
+					a_title.setAttribute("in_word", j);
+					$(".article-content .navigation").append(a_title);
+				}
+			}
+			$(".loadingdiv").attr("style","display:none;");
+		});
+		var loadedWord = {};
+		$(".navigation").on('click', '.word_name', function() {
+			changeArticle($(this).attr("in_type"), $(this).attr("in_word"));
+		});
+		function changeArticle(x, y) {
+			$(".loadingdiv").attr("style","display:block;");
+			var _name = index_data[x].word[y].name;
+			if (!loadedWord[_name]) {
+					loadedWord[_name] = $.ajax({
+					url: index_data[x].word[y].path,
+					dataType: 'text',
+					async: false
+					}).responseText;
+					//alert("第一次");
+			}
+			$(".loadingdiv").attr("style","display:none;");
+			if (index_data[x].word[y].encode) {
+				var docpassword = prompt("请输入文档密码");
+				if (docpassword != null && docpassword != "") {
+					$(".main_text").html(panDecrypt(loadedWord[_name], docpassword));
+				} else {
+					$(".main_text").html("未输入密码");
+				}
+			} else {
+				$(".main_text").html(loadedWord[_name]);
+			}
+		}
+	</script>
+</body>
+</html>

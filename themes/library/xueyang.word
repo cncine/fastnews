@@ -1,0 +1,9 @@
+<div class="wrap" onclick="musicSwith(this)">
+    <a class="avatar-pic avatar pause" href="javascript:;">
+        <img src="themes/img/ad/xscok.jpg" alt="haha">
+    </a>
+    <i class="zantin"></i>
+    <audio src="https://xuesenchan.gitee.io/cloud-media/file/mydc.mp3" preload="auto" oncanplay="icanplay(this)" onended="iplayend(this)">
+    </audio>
+</div>
+薛阳他自幼多病、六亲冷淡、命运多舛。经过将近二十年的折磨，他已经对这个社会毫无留恋。他恨他的母亲把他带到汉中来。他认为在这个世界外还存在一个极乐与美好的真实世界，他非常渴望能回归真实世界。然而，现实是残酷的，无论他做什么，结果都是被关入精神病院，他的父亲已经对他不报希望。他就是住院的命。

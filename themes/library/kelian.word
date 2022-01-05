@@ -1,0 +1,9 @@
+<div class="wrap" onclick="musicSwith(this)">
+    <a class="avatar-pic avatar pause" href="javascript:;">
+        <img src="themes/img/ad/xscok.jpg" alt="haha">
+    </a>
+    <i class="zantin"></i>
+    <audio src="https://xuesenchan.gitee.io/cloud-media/file/yswd.mp3" preload="auto" oncanplay="icanplay(this)" onended="iplayend(this)">
+    </audio>
+</div>
+这个可怜的孩子名叫薛阳，被诊断患有精神分裂症。他的人生充斥着痛苦和绝望，尽管他父母希望他过的幸福。他的父亲常说他不记好事，只记得痛苦的回忆，所以他的病好不了。他和这座村子的人结下了仇，老是想着和他们争个你死我活。他父亲极力挽救他不被人关起来，可他们俩始终不走在一条路上。他父亲说：“我们住在这，不能招惹别人，你图一时爽快，换来的代价就是被永远的关起来”。而薛阳说：“虽然我是住院的命，但是我不能活在别人胯下，有很多伤害过我的人，这些仇还是要报的”。世界上没有绝对的正与邪，只要有理由有志气，哪怕是一个人与世界为敌也无所畏惧。无论自己是多么的渺小，只要不懦弱、不屈服，即便是失败或牺牲，也是光荣的。
