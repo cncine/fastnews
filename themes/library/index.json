@@ -39,6 +39,7 @@
     {
         "type": "老薛(蒙尔奇)",
         "word":[
+            {"name": "变态之爱", "path": "themes\\library\\btlove.word"},
             {"name": "我为什么不想养阳阳", "path": "themes\\library\\yangyang1.word"},
             {"name": "阳阳得病", "path": "themes\\library\\yangyang2.word"},
             {"name": "烟囱倒了", "path": "themes\\library\\yancong.word"},

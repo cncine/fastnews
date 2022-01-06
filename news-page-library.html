@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="themes/js/swiper-3.4.0.jquery.min.js"></script>
 	<script type="text/javascript" src="themes/js/decrypt.js"></script>
 	<script type="text/javascript" src="themes/js/sc-player.js"></script>
+	<script type="text/javascript" src="themes/js/tool.js"></script>
 	<link href="favicon.ico" type="image/x-icon" rel="icon">
 	<link rel="stylesheet" href="themes/css/swiper-3.2.7.min.css"/>
 	<link rel="stylesheet" href="themes/css/home.css"/>
@@ -15,14 +16,14 @@
 	<link rel="stylesheet" href="themes/css/sc-player.css"/>
 	<style>
 		.word_title {
-			border:1px solid green;
-			background-color: lime;
+			border:1px solid DarkGray;
+			background: -webkit-linear-gradient(left,DarkBlue,LightBlue);
 			border-radius: 0.2rem;
+			color: white;
 		}
 		.word_name {
 			margin-left: 0.5rem;
-			margin-right: 0.5rem;]
-			display: block;
+			margin-right: 0.5rem;
 			white-space: nowrap;
 		}
 		.navigation {
@@ -42,6 +43,26 @@
 		.loadingdiv>div {
 			color: #FFFFFF;
 			font-size: 1rem;
+		}
+		.password_box {
+			position: fixed;
+			left: 50%; 
+			top: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			background-color: gainsboro;
+			padding: 1rem;
+			border-radius: 0.2rem;
+			box-shadow: 0px 0px 5px #000000;
+			display: none;
+			animation: show .2s
+		}
+		.password_box p {
+			color: #000000;
+		}
+		@-webkit-keyframes show {
+			0% {opacity: 0}
+			100% {opacity: 1}
 		}
 	</style>
 </head>
@@ -63,8 +84,8 @@
 				<h1 class="article-title">森禅图书馆</h1>
 			</div>
 			<div class="article-content">
-				<p><font color="grey">小薛谈生活&emsp;始于2022年1月5日</font></p>
-				我写过的一些文章，我把它们整理在这里，方便阅读。
+				<p><font color="grey">小薛谈生活&emsp;始于2022年1月5日 v2</font></p>
+				我写过的一些文章，我把它们整理在这里，方便阅读。<font color="grey">点击标题后划到底部查看</font>
 				<div class="navigation">
 					
 				</div>
@@ -190,6 +211,11 @@
 		<!--</div>-->
 	<!--</footer>-->
 	<div class="loadingdiv"><div>请稍后</div></div>
+	<div class="password_box">
+	<p>请输入密码：</p>
+	<input id="input_word">
+	<button type="button">ok</button>
+	</div>
 	<script type="text/javascript">
 		$.getJSON("themes/library/index.json", "", function(data) {
 			window.index_data = data;
@@ -214,6 +240,9 @@
 			changeArticle($(this).attr("in_type"), $(this).attr("in_word"));
 		});
 		function changeArticle(x, y) {
+			//console.log("读取文本");
+			if (index_data.length <= x) return;
+			if (index_data[x].word.length <= y) return;
 			$(".loadingdiv").attr("style","display:block;");
 			var _name = index_data[x].word[y].name;
 			if (!loadedWord[_name]) {
@@ -224,18 +253,39 @@
 					}).responseText;
 					//alert("第一次");
 			}
-			$(".loadingdiv").attr("style","display:none;");
 			if (index_data[x].word[y].encode) {
-				var docpassword = prompt("请输入文档密码");
-				if (docpassword != null && docpassword != "") {
-					$(".main_text").html(panDecrypt(loadedWord[_name], docpassword));
-				} else {
-					$(".main_text").html("未输入密码");
-				}
+				$(".password_box").attr("in_type", x);
+				$(".password_box").attr("in_word", y);
+				$(".password_box").attr("style","display:block;");
 			} else {
 				$(".main_text").html(loadedWord[_name]);
+				$(".loadingdiv").attr("style","display:none;");
 			}
 		}
+		
+		$(".password_box>button").click(function(){
+		    var _x = $(this).parent().attr("in_type");
+			var _y = $(this).parent().attr("in_word");
+			var docpassword = $(this).prev().val();
+			if (docpassword != "") {
+				$(".main_text").html(panDecrypt(loadedWord[index_data[_x].word[_y].name], docpassword));
+			} else {
+				$(".main_text").html("你没有输入密码");
+			}
+			$(this).parent().attr("style","display:none;");
+			$(".loadingdiv").attr("style","display:none;");
+		});
+		
+		$(function() {
+			//console.log("加载完毕");
+			var toValue = getQueryVariable("to");
+			if (toValue) {
+				var toArray = toValue.split(",");
+				if (toArray.length > 1)
+					if (isUint(toArray[0]) && isUint(toArray[1]))
+						changeArticle(toArray[0], toArray[1]);
+			}
+		});
 	</script>
 </body>
 </html>
